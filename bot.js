@@ -26,6 +26,13 @@ client.on('message', message => {
       
      }, 3000);
     }
+    // MAKE SURE TO UPDATE THIS ME
+    if (message.content === 'mb!help') {
+     const exampleEmbed = new Discord.MessageEmbed()
+	    exampleEmbed.setTitle('Current Commands')
+     exampleEmbed.setDescription('Testing')
+     channel.send(exampleEmbed);
+    }
 });
 
  
