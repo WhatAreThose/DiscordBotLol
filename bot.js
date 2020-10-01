@@ -22,7 +22,7 @@ client.on('message', message => {
     if (message.content === 'mb!serverinfo') {
      const msg = message.channel.send('Loading...');
      setTimeout(function() {
-     message.channel.edit(`Members: ${message.guild.memberCount}`)
+     msg.edit(`Members: ${message.guild.memberCount}`)
      }, 3000);
     }
  
