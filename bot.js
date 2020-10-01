@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const config = require('config.json');
-
  
 
 client.on('ready', () => {
@@ -13,14 +11,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+    if (!message.content.startsWith('mb!') || message.author.bot) return;
 
     if (message.content === 'Hi') {
 
        message.channel.send('Hello! \nI am a custom bot made by <@!430425679834644491>. You can DM him if you want to know how to make a bot! He will simplify the steps if you have not made one before.');
 
     }
-    if (message.content === `${config.prefix}steal`) {
+    if (message.content === 'mb!steal') {
      
      message.channel.send('Why are you trying to steal me? :(')
      setTimeout(function(){ 
@@ -30,11 +28,11 @@ client.on('message', message => {
      }, 3000);
     }
     // MAKE SURE TO UPDATE THIS ME
-    if (message.content === `${config.prefix}help`) {
+    if (message.content === 'mb!help') {
      const exampleEmbed = new Discord.MessageEmbed()
      exampleEmbed.setColor('#0099ff')
      exampleEmbed.setTitle('My Commands')
-     exampleEmbed.setDescription(`**Random Stuff**\n${config.prefix}steal\n**Replys**\n"Hi: Hello I am a custom bot made by..."`)
+     exampleEmbed.setDescription('**Random Stuff**\nmb!steal\n**Replys**\n"Hi: Hello I am a custom bot made by..."')
      message.channel.send(exampleEmbed);
     }
 });
