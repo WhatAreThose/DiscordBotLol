@@ -14,13 +14,12 @@ client.on('message', message => {
     if (!message.content.startsWith('mb!') || message.author.bot) return;
 
     if (message.content === 'Hi') {
-
        message.channel.send('Hello! \nI am a custom bot made by <@!430425679834644491>. You can DM him if you want to know how to make a bot! He will simplify the steps if you have not made one before.');
-
     }
-    
+ 
+    let msg;
     if (message.content === 'mb!serverinfo') {
-     const msg = message.channel.send('Loading...');
+     msg = await message.channel.send('Loading...');
      setTimeout(function() {
      msg.channel.edit(`Members: ${message.guild.memberCount}`)
      }, 3000);
