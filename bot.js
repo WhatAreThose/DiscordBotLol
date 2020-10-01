@@ -29,8 +29,9 @@ client.on('message', message => {
     // MAKE SURE TO UPDATE THIS ME
     if (message.content === 'mb!help') {
      const exampleEmbed = new Discord.MessageEmbed()
-     exampleEmbed.setTitle('Current Commands')
-     exampleEmbed.setDescription('Testing')
+     exampleEmbed.setColor('#0099ff')
+     exampleEmbed.setTitle('My Commands')
+     exampleEmbed.setDescription('**Random Stuff**\nmb!steal\n**Replys**\n"Hi: Hello I am a custom bot ma..."')
      message.channel.send(exampleEmbed);
     }
 });
