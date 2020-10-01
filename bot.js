@@ -25,7 +25,7 @@ client.on('message', message => {
     }
 
     if (message.content === 'mb!serverinfo') {
-     message.channel.send(`${message.guild.memberCount}`)
+     message.channel.send(`Members: ${message.guild.memberCount}`)
     }
 
     // MAKE SURE TO UPDATE THIS ME
