@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'Hi') {
+    if (message.content === 'Test') {
 
-       message.reply('Hello!');
+       message.channel.send('Test completed!');
 
        }
 
