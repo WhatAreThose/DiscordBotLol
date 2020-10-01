@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'Hi') {
 
-       message.send('Hello!');
+       message.reply('Hello!');
 
        }
 
