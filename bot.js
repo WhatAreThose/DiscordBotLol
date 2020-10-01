@@ -24,6 +24,11 @@ client.on('message', message => {
      }, 3000);
     }
 
+    if (message.content === 'mb!randomnumber) {
+    const num = Math.floor(Math.random() * 3);
+    message.channel.send(`Number: ${num}`)
+    }
+
     if (message.content === 'mb!serverinfo') {
      message.channel.send(`Members: ${message.guild.memberCount}`)
     }
