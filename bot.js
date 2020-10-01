@@ -31,7 +31,7 @@ client.on('message', message => {
      const exampleEmbed = new Discord.MessageEmbed()
      exampleEmbed.setTitle('Current Commands')
      exampleEmbed.setDescription('Testing')
-     channel.send(exampleEmbed);
+     message.channel.send(exampleEmbed);
     }
 });
 
