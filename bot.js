@@ -20,8 +20,10 @@ client.on('message', message => {
     }
     
     if (message.content === 'mb!serverinfo') {
-     message.channel.send('Loading...')
+     const msg = message.channel.send('Loading...');
+     setTimeout(function() {
      message.channel.edit(`Members: ${message.guild.memberCount}`)
+     }, 3000);
     }
  
     if (message.content === 'mb!steal') {
