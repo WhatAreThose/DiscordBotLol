@@ -36,7 +36,7 @@ client.on('message', message => {
      const exampleEmbed = new Discord.MessageEmbed()
      exampleEmbed.setColor('#0099ff')
      exampleEmbed.setTitle('My Commands')
-     exampleEmbed.setDescription('**Random Stuff**\nmb!steal\n**Replys**\n"Hi: Hello I am a custom bot made by..."')
+     exampleEmbed.setDescription('**Random Stuff**\nmb!steal\n**Server Stuff**\nmb!serverinfo\n**Replys**\n"Hi: Hello I am a custom bot made by..."')
      message.channel.send(exampleEmbed);
     }
 });
