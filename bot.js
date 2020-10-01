@@ -26,7 +26,7 @@ client.on('message', message => {
      
      message.channel.send('Ok fine... here is the link to take me: https://github.com/WhatAreThose/DiscordBotLol/')
       
-     }, 2000);
+     }, 3000);
     }
 });
 
