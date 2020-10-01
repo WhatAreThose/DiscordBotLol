@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'Test') {
+    if (message.content === 'Hi') {
 
-       message.channel.send('Test completed!');
+       message.channel.send('Hello! \n(Custom Bot By <@!430425679834644491>)');
 
        }
 
