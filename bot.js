@@ -20,7 +20,7 @@ client.on('message', message => {
        message.channel.send('Hello! \nI am a custom bot made by <@!430425679834644491>. You can DM him if you want to know how to make a bot! He will simplify the steps if you have not made one before.');
 
     }
-    if (message.content === '${prefix}steal') {
+    if (message.content === `${prefix}steal`) {
      
      message.channel.send('Why are you trying to steal me? :(')
      setTimeout(function(){ 
@@ -30,11 +30,11 @@ client.on('message', message => {
      }, 3000);
     }
     // MAKE SURE TO UPDATE THIS ME
-    if (message.content === '${prefix}help') {
+    if (message.content === `${prefix}help`) {
      const exampleEmbed = new Discord.MessageEmbed()
      exampleEmbed.setColor('#0099ff')
      exampleEmbed.setTitle('My Commands')
-     exampleEmbed.setDescription('**Random Stuff**\n${prefix}steal\n**Replys**\n"Hi: Hello I am a custom bot made by..."')
+     exampleEmbed.setDescription(`**Random Stuff**\n${prefix}steal\n**Replys**\n"Hi: Hello I am a custom bot made by..."`)
      message.channel.send(exampleEmbed);
     }
 });
