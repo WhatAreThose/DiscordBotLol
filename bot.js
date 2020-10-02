@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const broadcast = client.voice.createBroadcast();
-
 client.on('ready', () => {
 
     console.log('I am ready!');
@@ -37,13 +35,5 @@ client.on('message', message => {
      message.channel.send(exampleEmbed);
     }
 });
-
-client.on('message', async message => {
-    if (message.member.voice.channel) {
-     const connection = await message.member.voice.channel.join();
-     const dispatcher = broadcast.play('https://media1.vocaroo.com/mp3/1bVWXQXs4yVK');
-    }
-});
-
  
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN should be under Bot > Token.
