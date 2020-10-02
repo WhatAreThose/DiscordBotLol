@@ -41,7 +41,7 @@ client.on('message', message => {
 client.on('message', async message => {
     if (message.member.voice.channel) {
      const connection = await message.member.voice.channel.join();
-     const dispatcher = connection.play('audio.mp3');
+     const dispatcher = broadcast.play('audio.mp3');
     }
 });
 
