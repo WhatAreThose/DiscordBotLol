@@ -13,7 +13,12 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.bot) return;
 
-    broadcast.play('audio.mp3');
+    if (message.content === 'mb!playAudio) {
+        if (message.member.voice.channel) {
+         const connection = await message.member.voice.channel.join();
+         broadcast.play('audio.mp3');
+        };
+       }
 
     if (message.content === 'Hi') {
        message.channel.send('Hello! \nI am a custom bot made by <@!430425679834644491>. You can DM him if you want to know how to make a bot! He will simplify the steps if you have not made one before.');
