@@ -41,7 +41,7 @@ client.on('message', message => {
 client.on('message', async message => {
     if (message.member.voice.channel) {
      const connection = await message.member.voice.channel.join();
-     const dispatcher = broadcast.play('https://github.com/WhatAreThose/DiscordBotLol/raw/master/audio.mp3');
+     const dispatcher = broadcast.play('https://media1.vocaroo.com/mp3/1bVWXQXs4yVK');
     }
 });
 
