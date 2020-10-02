@@ -38,5 +38,11 @@ client.on('message', message => {
     }
 });
 
+client.on('message', async message => {
+    if (message.member.voice.channel) {
+     const connection = await message.member.voice.channel.join();
+	}
+});
+
  
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN should be under Bot > Token.
